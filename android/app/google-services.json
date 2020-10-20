@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "42856445755",
+    "firebase_url": "https://houserental-ef2bd.firebaseio.com",
+    "project_id": "houserental-ef2bd",
+    "storage_bucket": "houserental-ef2bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42856445755:android:fa6dd63d8c392eb396691e",
+        "android_client_info": {
+          "package_name": "com.example.house_rent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42856445755-oik4h17crficnr75jk6bphmadkfc5snt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.house_rent",
+            "certificate_hash": "7379926a36922097b5d90c1af5eef86c6902da8e"
+          }
+        },
+        {
+          "client_id": "42856445755-brth5d7uuq8vcb90mv18n9v7ac1gbmua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe2zUpID_vx8GzzXaaa2D6WSnzP_HuXx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42856445755-brth5d7uuq8vcb90mv18n9v7ac1gbmua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

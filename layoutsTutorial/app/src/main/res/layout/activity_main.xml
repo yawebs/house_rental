@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <androidx.core.widget.NestedScrollView
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+     <RelativeLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="This is wrap Content"
+             android:textSize="18dp"
+             android:textColor="@android:color/white"
+             android:textStyle="bold"
+             android:textAlignment="center"
+             android:layout_centerInParent="false"
+             android:id="@+id/wrap"
+             android:background="@color/colorAccent"
+             >
+
+
+         </TextView>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Next Line"
+             android:textSize="20dp"
+             android:id="@+id/text_next"
+             android:layout_toRightOf="@+id/wrap"
+             android:textStyle="bold"
+             android:layout_centerHorizontal="true"
+             android:layout_marginLeft="30dp"
+
+             />
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:id="@+id/text_to_right"
+             android:text="Text To Right"
+             android:layout_toRightOf="@+id/text_next"/>
+
+         <EditText
+             android:id="@+id/fname"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/wrap"
+             android:layout_marginTop="50dp"
+             android:text="First Name"
+             android:padding="20dp"
+             android:layout_marginStart="30dp"
+             android:layout_marginEnd="30dp"
+             android:layout_marginBottom="10dp"
+             android:drawableLeft="@drawable/ic_contact"
+             android:background="@drawable/custom_edittext"
+
+
+
+             />
+
+         <EditText
+             android:id="@+id/lname"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/fname"
+             android:text="Last Name"
+             android:layout_marginStart="30dp"
+             android:layout_marginEnd="30dp"
+             android:layout_marginBottom="10dp"
+             android:padding="20sp"
+             android:background="@drawable/custom_edittext"
+
+             />
+
+         <EditText
+             android:id="@+id/email"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/lname"
+             android:text="Email"
+             android:layout_marginStart="30dp"
+             android:layout_marginEnd="30dp"
+             android:inputType="textEmailAddress"
+             android:layout_marginBottom="30dp"
+             android:background="@drawable/custom_edittext"
+             android:padding="20sp"
+             />
+         <RadioGroup
+             android:id="@+id/radio_group"
+             android:layout_below="@+id/email"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:layout_marginStart="30dp"
+             android:layout_marginBottom="10dp"
+             >
+             <RadioButton
+             android:id="@+id/g_male"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Male"
+                android:checked="true"
+             />
+             <RadioButton
+                 android:id="@+id/g_female"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Female"
+                 />
+             <RadioButton
+                 android:id="@+id/g_others"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Others"
+                 />
+
+
+         </RadioGroup>
+
+
+         <EditText
+             android:id="@+id/pwd"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/radio_group"
+             android:layout_marginStart="30dp"
+             android:layout_marginTop="0dp"
+             android:layout_marginEnd="30dp"
+             android:background="@drawable/custom_edittext"
+             android:drawableRight="@drawable/ic_eye"
+             android:inputType="textPassword"
+
+             android:padding="20sp"
+
+             android:text="Password">
+
+         </EditText>
+
+         <Button
+             android:id="@+id/btn_submit"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="30dp"
+             android:layout_marginEnd="30dp"
+             android:text="Get Started"
+             android:layout_below="@id/pwd"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+             android:textColor="@android:color/white"
+             android:padding="20px"
+
+             />
+
+
+         <RelativeLayout
+             android:id="@+id/new_relative_layout"
+             android:layout_width="match_parent"
+             android:layout_height="300dp"
+             android:layout_below="@+id/btn_submit"
+             android:layout_marginTop="18dp"
+             android:background="@android:color/black"
+             android:paddingLeft="50dp">
+
+             <TextView
+                 android:id="@+id/textview_firstname"
+
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="50dp"
+                 android:text="First Name: "
+                 android:textColor="@android:color/white"
+                 android:textSize="20dp" />
+
+
+             <TextView
+                 android:id="@+id/textview_lastname"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/textview_firstname"
+                 android:text="Last Name:"
+                 android:textColor="@android:color/white"
+                 android:textSize="20dp" />
+
+             <TextView
+                 android:id="@+id/textview_email"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/textview_lastname"
+                 android:text="User Email :"
+                 android:textColor="@android:color/white"
+                 android:textSize="20dp" />
+
+             <TextView
+                 android:id="@+id/textview_gender"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/textview_email"
+                 android:text="Gender? :"
+                 android:textColor="@android:color/white"
+                 android:textSize="20dp" />
+         </RelativeLayout>
+
+
+     </RelativeLayout>
+  </androidx.core.widget.NestedScrollView>
+
+
+
+</RelativeLayout>
